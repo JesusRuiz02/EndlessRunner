@@ -1,17 +1,7 @@
-
-using UnityEditor;
 using UnityEngine;
 
 public class DirectionPlayer : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rigidbody = default;
-    [SerializeField] private float _xvalue = default;
-    [SerializeField] private float _speed = default;
-    [SerializeField] private int addCounter = default;
-    void Start()
-    {
-        _rigidbody = GetComponent<Rigidbody>(); 
-    }
     
     void Update()
     {
@@ -22,7 +12,7 @@ public class DirectionPlayer : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Movement(true );
+            Movement(true);
         }
     }
     private void Movement(bool isRight)

@@ -11,10 +11,14 @@ public class ForwardMovement : MonoBehaviour
             Forward();
         }
     }
-
     private void Forward()
     {
         transform.Translate( new  Vector3(0,0,-1) * _speed * Time.deltaTime);
+    }
+
+    public void addSpeed()
+    {
+        _speed += 1.1f;
     }
     
 }
